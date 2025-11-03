@@ -1,0 +1,215 @@
+/* Umumiy stillar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #007bff;
+  }
+  
+  /* Hero bo‘limi */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .hero-text button:hover {
+    background-color: #0056b3;
+  }
+  
+  .hero-image img {
+    width: 400px;
+    max-width: 100%;
+  }
+  
+  /* Xizmatlar */
+  .services {
+    padding: 50px 100px;
+    text-align: center;
+  }
+  
+  .service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card img {
+    width: 80px;
+    margin-bottom: 15px;
+  }
+  
+  /* Contact */
+  .contact {
+    background-color: #fff;
+    padding: 60px 100px;
+    text-align: center;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .contact button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+  }
+  
+
+  /* 📱 Moslashuvchan dizayn (Responsive) */
+@media (max-width: 992px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .services {
+      padding: 40px 20px;
+    }
+  
+    .contact {
+      padding: 40px 20px;
+    }
+  
+    .header {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .service-card {
+      width: 90%;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
